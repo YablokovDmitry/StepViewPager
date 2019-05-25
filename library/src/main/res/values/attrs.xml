@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="StateViewPager">
+
+        <!-- Orientation of the pager. -->
+        <attr name="android:orientation"/>
+
+        <!-- Titles. -->
+        <attr name="android:entries" />
+
+        <attr name="numOfIcons" format="integer" />
+
+        <attr name="selectedColor" format="color" />
+        <attr name="visitedColor" format="color" />
+        <attr name="unvisitedColor" format="color" />
+
+        <attr name="visitedIntermediateColor" format="color" />
+        <attr name="unvisitedIntermediateColor" format="color" />
+
+        <attr name="selectedTextColor" format="color" />
+        <attr name="visitedTextColor" format="color" />
+        <attr name="unvisitedTextColor" format="color" />
+
+        <attr name="selectedNumberColor" format="color" />
+        <attr name="visitedNumberColor" format="color" />
+        <attr name="unvisitedNumberColor" format="color" />
+
+        <attr name="selectedCheckmarkColor" format="color" />
+        <attr name="visitedCheckmarkColor" format="color" />
+        <attr name="unvisitedCheckmarkColor" format="color" />
+
+        <attr name="selectedBorderColor" format="color" />
+        <attr name="visitedBorderColor" format="color" />
+        <attr name="unvisitedBorderColor" format="color" />
+
+        <attr name="iconWidth" format="dimension" />
+        <attr name="iconHeight" format="dimension" />
+        <attr name="marginBetweenIcons" format="dimension" />
+
+        <attr name="visitedBorderWidth" format="dimension" />
+        <attr name="selectedBorderWidth" format="dimension" />
+        <attr name="unvisitedBorderWidth" format="dimension" />
+
+        <attr name="intermediateWidth" format="dimension" />
+        <attr name="intermediateHeight" format="dimension" />
+
+        <attr name="topMargin" format="dimension" />
+        <attr name="leftMargin" format="dimension" />
+        <attr name="rightMargin" format="dimension" />
+        <attr name="bottomMargin" format="dimension" />
+
+        <attr name="visitedTextSize" format="dimension" />
+        <attr name="selectedTextSize" format="dimension" />
+        <attr name="unvisitedTextSize" format="dimension" />
+
+        <attr name="visitedTextMargin" format="dimension" />
+        <attr name="selectedTextMargin" format="dimension" />
+        <attr name="unvisitedTextMargin" format="dimension" />
+
+        <attr name="visitedGradientFill" format="boolean" />
+        <attr name="unvisitedGradientFill" format="boolean" />
+        <attr name="selectedGradientFill" format="boolean" />
+
+        <attr name="visitedIntermediateGradientFill" format="boolean" />
+        <attr name="unvisitedIntermediateGradientFill" format="boolean" />
+
+        <attr name="selectedWidth" format="dimension" />
+        <attr name="selectedHeight" format="dimension" />
+        <attr name="selectedMargin" format="dimension" />
+
+        <attr name="showVisitedCheckmark" format="boolean" />
+        <attr name="showSelectedCheckmark" format="boolean" />
+        <attr name="showUnvisitedCheckmark" format="boolean" />
+
+        <attr name="showVisitedNumber" format="boolean" />
+        <attr name="showSelectedNumber" format="boolean" />
+        <attr name="showUnvisitedNumber" format="boolean" />
+
+        <attr name="visitedIntermediateStyle" format="string" />
+        <attr name="unvisitedIntermediateStyle" format="string" />
+
+        <attr name="iconsGravity" format="string" />
+
+        <attr name="visitedTextGravity" format="string" />
+        <attr name="selectedTextGravity" format="string" />
+        <attr name="unvisitedTextGravity" format="string" />
+
+        <attr name="visitedTextStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+
+        <attr name="selectedTextStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+
+        <attr name="unvisitedTextStyle">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+
+        <attr name="visitedDrawable" format="integer" />
+        <attr name="unvisitedDrawable" format="integer" />
+        <attr name="selectedDrawable" format="integer" />
+
+        <attr name="visitedIntermediateDrawable" format="integer" />
+        <attr name="unvisitedIntermediateDrawable" format="integer" />
+
+        <attr name="rectangularVisitedIcon" format="boolean" />
+        <attr name="rectangularUnvisitedIcon" format="boolean" />
+        <attr name="rectangularSelectedIcon" format="boolean" />
+
+    </declare-styleable>
+
+</resources>

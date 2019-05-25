@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ydn.viewpagerwithicons.StateViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:entries="@array/titles"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!--app:bottomMargin="0dp"
+        app:iconHeight="30dp"
+        app:iconWidth="30dp"
+
+
+        app:iconsGravity="left"
+        app:intermediateHeight="2dp"
+        app:intermediateWidth="90dp"
+        app:leftMargin="100dp"
+        app:marginBetweenIcons="30dp"
+        app:numOfIcons="3"
+        app:rectangularSelectedIcon="true"
+        app:rightMargin="0dp"
+
+        app:selectedBorderColor="#FFA233"
+        app:selectedBorderWidth="15dp"
+        app:selectedColor="#e0e0e0"
+        app:selectedHeight="30dp"
+        app:selectedTextColor="#FFA233"
+        app:selectedTextGravity="right"
+        app:selectedTextMargin="10dp"
+        app:selectedTextSize="14sp"
+        app:selectedTextStyle="bold"
+        app:selectedWidth="30dp"
+        app:showVisitedCheckmark="true"
+
+        app:topMargin="0dp"
+        app:unvisitedBorderColor="#909090"
+        app:unvisitedBorderWidth="2dp"
+        app:unvisitedColor="#e0e0e0"
+        app:unvisitedIntermediateColor="#909090"
+        app:unvisitedIntermediateStyle="dotted"
+        app:unvisitedTextColor="#909090"
+
+        app:unvisitedTextGravity="bottom"
+        app:unvisitedTextMargin="10dp"
+        app:unvisitedTextSize="14sp"
+        app:unvisitedTextStyle="normal"
+
+        app:visitedBorderColor="#FFA233"
+        app:visitedBorderWidth="2dp"
+        app:visitedCheckmarkColor="@android:color/holo_blue_light"
+
+        app:visitedColor="#e0e0e0"
+        app:visitedIntermediateColor="#FFA233"
+
+        app:visitedIntermediateStyle="solid"
+        app:visitedTextColor="#909090"
+
+        app:visitedTextGravity="bottom"
+        app:visitedTextMargin="10dp"
+        app:visitedTextSize="14sp"
+
+        app:visitedTextStyle="normal" />
+
+    app:visitedIntermediateDrawable="@mipmap/ic_launcher"
+    app:unvisitedIntermediateDrawable="@mipmap/ic_launcher"
+
+-->
+
+        <Spinner
+            android:id="@+id/spinner_orientation"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_orientation"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/textview_orientation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Orientation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/spinner_orientation"
+            app:layout_constraintTop_toBottomOf="@id/pager" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#e0e0e0"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinner_orientation" />
+
+        <TextView
+            android:id="@+id/textview_gravity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Gravity"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view1" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_top"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+
+            android:layout_marginTop="10dp"
+            android:checked="true"
+            android:textOff="Top"
+            android:textOn="Top"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            tools:text="TOP" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_bottom"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:textOff="BOTTOM"
+            android:textOn="BOTTOM"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/toggle_button_top"
+            app:layout_constraintTop_toBottomOf="@+id/toggle_button_top"
+            tools:text="BOTTOM" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_left"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textOff="LEFT"
+            android:textOn="LEFT"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/toggle_button_bottom"
+            app:layout_constraintEnd_toStartOf="@+id/toggle_button_top"
+            app:layout_constraintTop_toBottomOf="@+id/toggle_button_top" />
+
+        <ToggleButton
+            android:id="@+id/toggle_button_right"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:textOff="RIGHT"
+            android:textOn="RIGHT"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/toggle_button_bottom"
+            app:layout_constraintStart_toEndOf="@+id/toggle_button_top"
+            app:layout_constraintTop_toBottomOf="@+id/toggle_button_top" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#e0e0e0"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toggle_button_bottom" />
+
+        <TextView
+            android:id="@+id/textview_variants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Sample"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view2" />
+
+        <Spinner
+            android:id="@+id/spinner_variants"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textview_variants"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
