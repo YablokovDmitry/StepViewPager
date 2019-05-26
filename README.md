@@ -1,7 +1,7 @@
 # StateViewPager
 Android ViewPager with customizable Indicators
 
-<img src=https://user-images.githubusercontent.com/3678050/58373690-cd420f00-7f3a-11e9-9bdf-2be6eeb5b024.gif width="240" height="440">
+<img src=https://user-images.githubusercontent.com/3678050/58378217-145eed00-7f99-11e9-84be-9ec84ce91a54.gif width="265" height="480">
 
 ### **use StepViewPager**
 
