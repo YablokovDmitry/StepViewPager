@@ -757,6 +757,10 @@ public class StateViewPager extends ViewPager implements PagerContract.View {
                 if (icon.isDottedStyle()) {
                     int radius = Math.min(width, height) / 2;
 
+                    if (radius == 0) {
+                        return;
+                    }
+
                     if (width > height) {
                         for (int x = left + radius; x <= left + width /*- radius*/; x += 4 * radius) {
                             mCanvas.drawCircle(x, top + height / 2f, radius, mPaintIcon);
