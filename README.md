@@ -1,5 +1,7 @@
 # StateViewPager
-Android ViewPager with customizable Indicators
+Android directional ViewPager with customizable Indicators
+
+<img src=https://user-images.githubusercontent.com/3678050/58378461-e11e5d00-7f9c-11e9-8bb5-899f243962d1.png width="500" height="50">
 
 <img src=https://user-images.githubusercontent.com/3678050/58378217-145eed00-7f99-11e9-84be-9ec84ce91a54.gif width="265" height="480">
 
