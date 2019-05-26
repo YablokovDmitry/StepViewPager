@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         samples.add("Sample 4");
         samples.add("Sample 5");
         samples.add("Sample 6");
-        samples.add("Sample 7");
+        //samples.add("Sample 7");
 
         final Spinner variantsSpinner = findViewById(R.id.spinner_variants);
         final ArrayAdapter<String> variantsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, samples);
