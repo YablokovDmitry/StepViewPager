@@ -52,18 +52,20 @@ in xml
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent"/>
 
-        app:bottomMargin="0dp"
+        app:topMargin="10dp"
+        app:bottomMargin="10dp"
+        app:leftMargin="10dp"
+        app:rightMargin="10dp"
+        
         app:iconHeight="30dp"
         app:iconWidth="30dp"
 
         app:iconsGravity="left"
         app:intermediateHeight="2dp"
         app:intermediateWidth="90dp"
-        app:leftMargin="100dp"
         app:marginBetweenIcons="30dp"
         app:numOfIcons="3"
         app:rectangularSelectedIcon="true"
-        app:rightMargin="0dp"
 
         app:selectedBorderColor="#FFA233"
         app:selectedBorderWidth="15dp"
@@ -77,7 +79,6 @@ in xml
         app:selectedWidth="30dp"
         app:showVisitedCheckmark="true"
 
-        app:topMargin="0dp"
         app:unvisitedBorderColor="#909090"
         app:unvisitedBorderWidth="2dp"
         app:unvisitedColor="#e0e0e0"
