@@ -22,7 +22,7 @@ android {
 
     libraryVariants.all { variant ->
         variant.outputs.all {
-            outputFileName = "viewpagerwithicons-${variant.name}-${defaultConfig.versionName}.aar"
+            outputFileName = "stateviewpager-${variant.name}-${defaultConfig.versionName}.aar"
         }
     }
 }
