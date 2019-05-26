@@ -2,8 +2,8 @@
 Android directional ViewPager with customizable Indicators
 
 <img src=https://user-images.githubusercontent.com/3678050/58378550-5b031600-7f9e-11e9-962e-4eca5dc0de33.png width="500" height="75">
-<img src=https://user-images.githubusercontent.com/3678050/58378461-e11e5d00-7f9c-11e9-8bb5-899f243962d1.png width="500" height="50">
-<img src=https://user-images.githubusercontent.com/3678050/58378535-efb94400-7f9d-11e9-8de0-4dc43cf9352f.png width="370" height="50">
+<img src=https://user-images.githubusercontent.com/3678050/58378461-e11e5d00-7f9c-11e9-8bb5-899f243962d1.png width="350" height="35">
+<img src=https://user-images.githubusercontent.com/3678050/58378535-efb94400-7f9d-11e9-8de0-4dc43cf9352f.png width="250" height="32">
 
 
 
