@@ -1,5 +1,5 @@
-# StateViewPager
-Android directional ViewPager with customizable Indicators
+# Android StateViewPager 
+Implementation of the compatibility library ViewPager with customizable Indicators that supports paging both vertically and horizontally.
 
 <img src=https://user-images.githubusercontent.com/3678050/58378550-5b031600-7f9e-11e9-962e-4eca5dc0de33.png width="500" height="75">
 <img src=https://user-images.githubusercontent.com/3678050/58378461-e11e5d00-7f9c-11e9-8bb5-899f243962d1.png width="350" height="35">
