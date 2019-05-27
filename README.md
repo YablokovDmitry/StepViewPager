@@ -9,10 +9,31 @@ Implementation of the compatibility library ViewPager with customizable Indicato
 
 <img src=https://user-images.githubusercontent.com/3678050/58378217-145eed00-7f99-11e9-84be-9ec84ce91a54.gif width="265" height="480">
 
-### **use StepViewPager**
+## **how to use**
 
+Add it in your root build.gradle at the end of repositories:
+```
+        repositories {
+	    ...
+	    maven { url "https://jitpack.io" }
+         }	
+```
+Add the dependency
+```
+        dependencies {
+            ...
+            implementation 'com.android.support:recyclerview-v7:28.0.0'
+            implementation 'com.google.guava:guava:27.0.1-android'
+            implementation 'com.github.YablokovDmitry:StateViewPager:v1.1'
+        }
+```
+### **use StepViewPager**
 in code 
 ```
+        StateViewPager mPager = findViewById(R.id.pager);
+        mPager.setAdapter(new TestAdapter(getSupportFragmentManager()));
+        
+        // Setting options
         mPager.setNumberOfIcons(4)
                 .setOrientation(LinearLayout.VERTICAL)
                 .setMargins(10, 10, 10, 10)
@@ -47,8 +68,19 @@ in code
                 .setTextMargins(5, 5, 5)
                 .setIntermediateIconColors(Color.parseColor("#0288D1"), Color.parseColor("#f0f0f0"))
                 .setIntermediateIconStyles("solid", "solid");
+        
+        mPager.setCurrentItem(0);
+      
 ```
 in xml 
+```
+<com.ydn.viewpagerwithicons.StateViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="horizontal"/>
+```        
+Setting options in layout are also possible
 ```
 <com.ydn.viewpagerwithicons.StateViewPager
         android:id="@+id/pager"
@@ -56,7 +88,6 @@ in xml
         android:layout_height="300dp"
         android:entries="@array/titles"
         android:orientation="horizontal"
-        app:layout_constraintTop_toTopOf="parent"/>
 
         app:topMargin="10dp"
         app:bottomMargin="10dp"
