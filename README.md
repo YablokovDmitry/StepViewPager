@@ -142,6 +142,10 @@ Setting options in layout are also possible
         app:visitedTextStyle="normal" />
   ```      
   
+  ### **Sample application**
+
+Sample application is also available in the **releases** section      	
+
   ### **License**
 ```      
 
