@@ -146,6 +146,10 @@ Setting options in layout are also possible
 
 Sample application is also available in the **releases** section      	
 
+  ### **Developed By**
+  - Dmitry Yablokov - [dnyablokov@gmail.com](mailto:dnyablokov@gmail.com)
+
+
   ### **License**
 ```      
 
