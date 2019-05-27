@@ -237,6 +237,14 @@ public class StateViewPager extends ViewPager implements PagerContract.View {
      */
     public StateViewPager setNumberOfIcons(int num) {
         mPagerPresenter.setNumberOfIcons(num);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                invalidate();
+            }
+        }, 100);
+
         requestLayout();
         return this;
     }
@@ -793,6 +801,7 @@ public class StateViewPager extends ViewPager implements PagerContract.View {
             @Override
             public void run() {
                 setCurrentItem(item, true);
+                invalidate();
             }
         }, 100);
     }
