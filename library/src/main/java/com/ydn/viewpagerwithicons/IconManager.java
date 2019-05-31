@@ -225,16 +225,9 @@ class IconManager {
     int getClickedIconNum(Point point) {
         for (int i = 0; i < mIcons.size(); i++) {
             final Icon icon = mIcons.get(i);
-            if (mOrientation == HORIZONTAL) {
-                if (point.x >= icon.getLeft() && point.x <= icon.getLeft() + icon.getWidth()  &&
-                    point.y >= icon.getTop() && point.y <= icon.getTop() + icon.getHeight()) {
-                    return i;
-                }
-            } else {
-                if (point.x >= icon.getLeft() && point.x <= icon.getLeft() + icon.getWidth()  &&
-                        point.y >= icon.getTop() && point.y <= icon.getTop() + icon.getHeight()) {
-                    return i;
-                }
+            if (point.x >= icon.getLeft() && point.x <= icon.getLeft() + icon.getWidth()  &&
+                point.y >= icon.getTop() && point.y <= icon.getTop() + icon.getHeight()) {
+                return i;
             }
         }
         return -1;
