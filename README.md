@@ -1,4 +1,4 @@
-# Android StateViewPager (Step View) 
+# Android StepViewPager
 Implementation of the compatibility library ViewPager with customizable Indicators (drawables not required) that supports paging both vertically and horizontally. You can configure the appearance by simply specifying various attributes.
 
 <img src=https://user-images.githubusercontent.com/3678050/58378550-5b031600-7f9e-11e9-962e-4eca5dc0de33.png width="500" height="75">
